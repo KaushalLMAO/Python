@@ -54,8 +54,12 @@ while tries > 1 :
     exit()
         
  else:
-    print("Wrong guess. Try again.")
-    user_input = str(input("Enter a letter: "))
+    print("Wrong word. Try again.")
+    if user_input in word:
+       print("You have a correct letter in the word.")
+    else:
+       print("Nothing is right")
+    user_input = str(input("Enter a letter: ")).upper()
  
  tries  = tries -1    
 
